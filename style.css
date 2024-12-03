@@ -1,173 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Allan:wght@400;700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Symbols:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spicy+Rice&display=swap');
 *{
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.bigFrame{
-background-color: #D74949;
-width: 100vw;
-height: 684px;
-
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfd;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("https://unsplash.com/photos/purple-and-pink-light-illustration-rKv4HduvzIE");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.whiteFrame{
-    background-color:  #F3F3F3;
-    width: 1110px;
-    height: 615px;
-    margin: auto;  
+h1{
+font-family: "Spicy Rice", sans-serif;
+color: rgb(69, 135, 194);
+text-shadow:1px 1px 1px gold;
 }
 
-
-
-.lineOne{
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 16.41px;
-    display: inline-block;
-    margin-top: 100px;
-    margin-left: 50px;
+.board{
+    width: 450px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: rgb(255, 255, 255);
+    gap: 2px;
 }
 
-.lineTwo{
-    font-family: "Roboto", sans-serif;
-    font-size: 19px;
-    font-weight: 300;
-    line-height: 16.41px;
-    margin-top: 12px;
-    margin-right: 51px;
-    text-align: right;
-    font-weight: bold;     
-} 
-
-.lineTree{
-    font-family: "Roboto", sans-serif;
-    font-size: 23px;
-    font-weight: 300;
-    line-height: 16.41px;
-    margin-top: 7px;
-    margin-left: 50px;
-    text-align: center;  
-    text-transform: uppercase;
-}
-
-.red{
-    color:#8F2727;
-    font-weight: bold;
-}
-
-.main-container{
-    width: 200px;
-    height: 300px; 
-    box-shadow: 1px 2px 3px 1px lightgray;
-    border-radius: 1.5rem; 
-    margin-top: 38px; 
-    margin-left: 50px;
-    position: absolute;
-    
-} 
-
-.card{
-    width: 200px;
-    height: 300px;
-    background-color: #F3F3F3;
-    margin-top: 0px;
-    margin-left: 0px;
-    border-radius: 1.5rem;
-    position: relative;
-    
-    
-}
-
-
-.image {
-    width: 200px;
-    height: 185px;
-    overflow: hidden;
-    border-radius: 1.5rem 1.5rem 0 0;
-    position: relative;
-    margin-left: 0px;
-}
-
-.image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image scales proportionally to fill its container */
-    display: block;    /* Removes unwanted gaps caused by inline-block rendering */
-    position: relative;
-}
-
-.name{
-font-family: Roboto, sans-serif;
-font-size: 14px;
-font-weight: 700;
-line-height: 16.41px;
-letter-spacing: 0.04em;
-text-align: left;
-margin-top: 20px;
-margin-left: 20px;
-font-weight: bold;
-}
-
-.role{
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 16.41px;
-    text-align: left;
-    margin-top: 3px;
-    margin-left: 20px;
-}
-
-.linkedin, .whatsapp {
-    display: inline-block; 
-    vertical-align: middle;
-}
-
-.linkedin img{
-    width: 18px;
-    height: 18px;
-    margin-top: 10px;
-    margin-left: 20px;
-}
-
-.whatsapp img{
-    width: 18px;
-    height: 18px;
-    margin-top: 10px;
-    margin-left: 8px;  
-}
-
-.circle{
-width: 54px;
-height: 54px;
-background-color: #D9D9D9;
-border-radius: 50rem;
-margin-top: 2px;
-margin-left: 153px;
-overflow: visible; 
-}
-
-.footer{
-width: 1440px;
-height: 70px;
-background-color: #3A3A3A;
-margin-top: 0px;
-}
-
-.footerLine{
-    color: #FFFFFF;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 16.41px;
+.cell{
+    border: 1px solid rgb(69, 135, 194);
+    font-size: 64px;
     text-align: center;
-    display: block;
-    padding-top: 27px;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    /* http://localhost:5500/01.CSS/myCssExercises/pixerl_perfect/ */
+.message{
+    background-color: rgb(255, 255, 255);
+    font-size: 40px;
+    border: 1px solid gold;
+    border-radius: 10px;
+    color:  rgb(69, 135, 194);
+}
+
+.restart{
+background-color: rgb(255, 255, 255);
+color: rgb(69, 135, 194);
+border-color: rgb(255, 255, 255);
+}
